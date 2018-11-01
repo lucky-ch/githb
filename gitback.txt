@@ -1,0 +1,12 @@
+git status .  #掌握仓库当前状态
+git add filename  #把文件添加到仓库
+git commit -m "提交记录"   #把文件提交到仓库
+git diff filename  #查看两次见的差异
+git log  #查看历史提交记录
+git log --pretty=oneline   #简洁的显示历史记录（commit id + 提交记录）
+
+#########版本回退##############
+git reset --hard HEAD^    #把当前版本回退到上一个版本
+
+
+
