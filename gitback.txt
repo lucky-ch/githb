@@ -10,4 +10,4 @@ git reset --hard HEAD^    #把当前版本回退到上一个版本
 git reset --hard commit_id   #指定回到未来的某个版本
 
 
-
+git checkout -- filename  #丢弃工作区的修改(让文件回到最后一次的commit/add时的状态）
