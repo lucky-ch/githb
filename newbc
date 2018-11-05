@@ -1,7 +1,25 @@
 #创建一个新分支并进行各种操作
 git checkout -b newbrc   #创建一个名为newbrc的新分支
+####add和commit之后，checkout到master分支进行合并
+#两种方式：
 git merge 分支名     #checkout-master后执行，合并分支【属于快速合并,这种合并模式删掉分支后会丢失分支信息】
 git merge --no-ff -m "merge with no-ff" 分支名  #参数--no-ff标示禁用快速合并模式，这种方式可以从分支历史上看出分支信息i
 git branch -d dev   #合并完成后，删除dev分支
+#合并完成后提交
+
+==========#bug分支的建立#==========
+git stash  #隐藏当前正在工作的分支
+git checkout master+git checkout -b issue-101   #切到需要修复的分支并创建临时分支。add+commit后切回到要修复的分支合并，删除临时分支，push修改到服务器 
+git stash list  #查看工作区
+git stash apply  #恢复工作区并不删除stash内容
+git stash drop  #删除stash内容
+
+git stash pop  #恢复stash内容的同时并删除
+
+git branch -D dev   #强制删除分支
+
+
+
+
 
 
