@@ -1,0 +1,2 @@
+#创建一个新分支并进行各种操作
+git checkout -b newbrc   #创建一个名为newbrc的新分支
